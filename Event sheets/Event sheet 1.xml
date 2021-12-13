@@ -2,5 +2,26 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <variable constant="0" name="tile_y" sid="652083174255010" static="0" type="number">10</variable>
+        <variable constant="0" name="tile_x" sid="318626708952110" static="0" type="number">10</variable>
+        <event-block sid="529050392256812">
+            <conditions>
+                <condition id="0" name="Compare tile at" sid="508468409342049" type="Tilemap2">
+                    <param id="0" name="Tile X">tile_x</param>
+                    <param id="1" name="Tile Y">tile_y</param>
+                    <param id="2" name="Comparison">0</param>
+                    <param id="3" name="Tile">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="113049283915312" type="tiles">
+                    <param id="0" name="X">tile_x</param>
+                </action>
+                <action id="-2" name="Set Y" sid="659229419194887" type="tiles">
+                    <param id="0" name="Y">tile_y</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
